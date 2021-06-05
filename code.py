@@ -91,6 +91,6 @@ if __name__ == '__main__':
     # convert dataframe to a list of dictionaries
     diebus_dict = create_dicts(diebus)
 
-    # send email(s) by looping over all dictionaries if list is not empty
+    # send email(s) by looping over all dictionaries if list is not empty (password is a placeholder)
     if diebus_dict:
-        send_email('smtp.gmail.com', 587, 'friendships@nikitanaik.com', 'Ann0D!em', diebus_dict, 'niknaik97@gmail.com')
+        send_email('smtp.gmail.com', 587, 'friendships@nikitanaik.com', password, diebus_dict, 'niknaik97@gmail.com')
